@@ -22,7 +22,6 @@ function show(){
 		if( recipe && recipe.length === 1 ){
 			recipe.addClass('popupRecipe_ext');
 			recipe.append('<button class="closeBtn_ext">x</button>');
-			$(window).scrollTop(0);
 			return false;
 		}
 		return true;
