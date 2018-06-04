@@ -1,5 +1,5 @@
 .popupRecipe_ext {
-	position: absolute;
+	position: absolute !important;
 	top: 2rem;
 	left: 50%;
 	transform: translate(-50%, 0);
