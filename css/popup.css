@@ -1,0 +1,30 @@
+.popupRecipe_ext {
+	position: absolute;
+	top: 2rem;
+	left: 50%;
+	transform: translate(-50%, 0);
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 9999999px;
+	max-width: 700px;
+    min-width: 340px;
+    z-index: 9999999999 !important;
+    background: white;
+    margin: 1rem !important;
+    padding: 2rem !important;
+    border-radius: 1rem;
+    border: 1px solid gray !important;
+}
+
+.closeBtn_ext{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 1rem !important;
+    border: 1px solid gray !important;
+    z-index: 999999999 !important;
+    min-width: 2.5em;
+    min-height: 2em;
+}
+
+.closeBtn_ext:hover{
+    transform: scale(1.15) !important;
+}

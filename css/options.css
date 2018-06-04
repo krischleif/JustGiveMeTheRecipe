@@ -1,0 +1,13 @@
+#attrHover{
+    background: gray;
+    border-radius: 1rem;
+    border: 1px solid gray;
+    color:white;
+    width: 1rem;
+    text-align: center;
+    margin-left: 70%;
+}
+body{
+    min-width: 5em;
+    min-height: 10em;
+}
