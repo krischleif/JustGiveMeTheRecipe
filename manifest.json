@@ -1,6 +1,6 @@
 {
     "name": "Just Give Me The Recipe",
-    "version": "1.0",
+    "version": "1.02",
     "description": "Avoid scrolling through walls of text and images on food blogs and get the recipe right away.",
     "manifest_version": 2,  
     "permissions": [
