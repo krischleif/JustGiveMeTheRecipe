@@ -1,9 +1,4 @@
 chrome.storage.sync.get("JGMTRDisabled", function(data){
-    if(!data.JGMTRDisabled){
-        chrome.storage.sync.set({"JGMTRDisabled" : false})
-        $('#powerBtn').removeClass('disabled');
-        chrome.browserAction.setIcon({path: '../img/recipe-book.png'}, function(e){})
-    }
     if(data.JGMTRDisabled === true){
         $('#powerBtn').addClass('disabled');
         chrome.browserAction.setIcon({path: '../img/recipe-book-gray.png'}, function(e){})

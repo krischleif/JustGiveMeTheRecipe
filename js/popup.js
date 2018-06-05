@@ -56,6 +56,11 @@ function isOnScreen(el){
 };
 
 chrome.storage.sync.get("JGMTRDisabled", function(e) {
+    if(e.JGMTRDisabled === undefined){
+        chrome.storage.sync.set({"JGMTRDisabled" : false})
+        $('#powerBtn').removeClass('disabled');
+		show();
+    }
 	if(e.JGMTRDisabled === false){
 		show();
 		$('.closeBtn_ext').click(function(){
