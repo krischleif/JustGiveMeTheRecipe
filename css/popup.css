@@ -1,13 +1,13 @@
 .popupRecipe_ext {
 	position: absolute !important;
-	top: 2rem;
+	top: 2rem !important;
 	left: 50% !important;
 	transform: translate(-50%, 0) !important;
 	box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 9999999px;
 	max-width: 44em !important;
     min-width: 45% !important;
     z-index: 9999999999 !important;
-    background: white;
+    background: white !important;
     margin: 1rem !important;
     padding: 2rem !important;
     border-radius: 1rem;

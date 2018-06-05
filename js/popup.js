@@ -11,7 +11,9 @@ var classNames = [
 	'.recipe-callout',
 	'.tasty-recipes',
     '.food-card',
-    '.recipebody',
+	'.recipebody',
+	'.wpurp-recipe-title',
+	'#wpurp-container-recipe-10155',
 	'div[itemtype="http://schema.org/Recipe"]',
 	'div[itemtype="https://schema.org/Recipe"]',
 ];
@@ -58,5 +60,10 @@ chrome.storage.sync.get(document.location.hostname, function(items) {
 	$('.closeBtn_ext').click(function(){
 		hide();
 	});
+	$('body').bind('click', function(e){
+		if($(e.target).closest(".popupRecipe_ext"). length === 0 || $(e.target).is('.popupRecipe_ext')){
+			hide();
+		}
+	})
 });
 
