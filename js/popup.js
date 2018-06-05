@@ -55,15 +55,17 @@ function isOnScreen(el){
 
 };
 
-chrome.storage.sync.get(document.location.hostname, function(items) {
-	show();
-	$('.closeBtn_ext').click(function(){
-		hide();
-	});
-	$('body').bind('click', function(e){
-		if($(e.target).closest(".popupRecipe_ext"). length === 0 || $(e.target).is('.popupRecipe_ext')){
+chrome.storage.sync.get("JGMTRDisabled", function(e) {
+	if(e.JGMTRDisabled === false){
+		show();
+		$('.closeBtn_ext').click(function(){
 			hide();
-		}
-	})
+		});
+		$('body').bind('click', function(e){
+			if($(e.target).closest(".popupRecipe_ext"). length === 0 || $(e.target).is('.popupRecipe_ext')){
+				hide();
+			}
+		})
+	}
 });
 

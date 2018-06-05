@@ -1,3 +1,8 @@
+body{
+    min-width: 5em;
+    min-height: 10em;
+}
+
 #attrHover{
     background: gray;
     border-radius: 1rem;
@@ -7,7 +12,8 @@
     text-align: center;
     margin-left: 70%;
 }
-body{
-    min-width: 5em;
-    min-height: 10em;
+
+.disabled{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
