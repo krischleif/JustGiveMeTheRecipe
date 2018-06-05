@@ -1,7 +1,7 @@
 {
     "name": "Just Give Me The Recipe",
-    "version": "0.1",
-    "description": "Trims the fat and removes all the silly food blog text, gives you the recipe you actually came for.",
+    "version": "1.0",
+    "description": "Avoid scrolling through walls of text and images on food blogs and get the recipe right away.",
     "manifest_version": 2,  
     "permissions": [
         "storage",
