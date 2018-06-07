@@ -42,10 +42,10 @@ function isOnScreen(el){
 
     var viewport = {
         top : win.scrollTop(),
-        left : win.scrollLeft()
+		left : win.scrollLeft(),
+		right: win.scrollLeft() + win.width(),
+		bottom: win.scrollTop() + win.height()
     };
-    viewport.right = viewport.left + win.width();
-    viewport.bottom = viewport.top + win.height();
 
     var bounds = el.offset();
     bounds.right = bounds.left + el.outerWidth();
@@ -68,7 +68,7 @@ chrome.storage.sync.get("JGMTRDisabled", function(e) {
 		hide();
 	});
 	$('body').bind('click', function(e){
-		if($(e.target).closest(".popupRecipe_ext"). length === 0 || $(e.target).is('.popupRecipe_ext')){
+		if($(e.target).closest(".popupRecipe_ext").length === 0 || $(e.target).is('.popupRecipe_ext')){
 			hide();
 		}
 	})
