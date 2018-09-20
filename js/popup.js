@@ -16,6 +16,7 @@ var classNames = [
 	'#wpurp-container-recipe-10155',
 	'div[itemtype="http://schema.org/Recipe"]',
 	'div[itemtype="https://schema.org/Recipe"]',
+	'.recipe_card',
 ];
 
 function show(){
