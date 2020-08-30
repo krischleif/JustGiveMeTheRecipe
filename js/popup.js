@@ -1,9 +1,11 @@
 var classNames = [
-    '.recipe',
+	'.recipe-wrapper',
+	'.tabbox',
 	'.innerrecipe',
 	'.easyrecipe',
     '.recipe-content',
-	'.recipe-summary.wide',
+	'.recipe-summarywide',
+	'[attribute*="container-recipe"]',
 	'.wprm-recipe-container',
 	'.wprm-recipe',
 	'.wprm-recipe-simple',
@@ -12,19 +14,20 @@ var classNames = [
 	'.tasty-recipes',
     '.food-card',
 	'.recipebody',
-	'.wpurp-recipe-title',
+	'.wprm-recipe',
 	'#wpurp-container-recipe-10155',
 	'div[itemtype="http://schema.org/Recipe"]',
 	'div[itemtype="https://schema.org/Recipe"]',
-	'.recipe_card',
+	'.recipe_card'
 ];
 
 function show(){
-    classNames.every(function(e){
+    classNames.forEach(function(e){
 		let recipe = $(e);
 		if( recipe && recipe.length === 1 && !isOnScreen(recipe)){
 			recipe.addClass('popupRecipe_ext');
 			recipe.append('<button class="closeBtn_ext">x</button>');
+			$('html,body').scrollTop(0);
 			return false;
 		}
 		return true;
